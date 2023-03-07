@@ -1,11 +1,542 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
 
-<h1>Bugby</h1>
-<p>This website is a host for the UW-Stout student created game Bugby.</p>
-<p>This website is still being created and will continue to get updates.</p>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="theme-color" content="#9B4B45">
+  <meta content="https://img.itch.zone/aW1nLzEwODExODczLnBuZw==/original/RTXN8I.png" property="og:image">
+  <link rel="icon" type="image/png" href="https://img.itch.zone/aW1nLzEwODExODczLnBuZw==/32x32%23/QV3Rme.png">
+  <meta content="itch.io" property="og:site_name">
+  <meta content="4503599627724030" property="twitter:account_id">
+  <meta content="Smash, dash, and crash your way to glory for your goblin tribe in the traditional game of Bugby."
+    property="og:description">
+  <meta name="description"
+    content="Smash, dash, and crash your way to glory for your goblin tribe in the traditional game of Bugby.">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta name="itch:path" content="games/1828902">
+  <meta content="@itchio" name="twitter:site">
+  <meta name="twitter:title" content="Bugby by WVProductions">
+  <meta name="twitter:description"
+    content="Smash, dash, and crash your way to glory for your goblin tribe in the traditional game of Bugby. Available for Windows">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="https://img.itch.zone/aW1nLzEwODExODczLnBuZw==/508x254%23mb/0DzYAX.png" property="twitter:image">
+  <meta name="twitter:url" content="https://wvproductions.itch.io/bugby">
+  <script type="text/javascript" async="" src="./Bugby_files/ecommerce.js.download"></script>
+  <script async="" src="./Bugby_files/analytics.js.download"></script>
+  <script
+    type="application/ld+json">{"@context":"http:\/\/schema.org","itemListElement":[{"position":1,"item":{"name":"Games","@id":"https:\/\/itch.io\/games"},"@type":"ListItem"},{"position":2,"item":{"name":"Platformer","@id":"https:\/\/itch.io\/games\/genre-platformer"},"@type":"ListItem"},{"position":3,"item":{"name":"Free","@id":"https:\/\/itch.io\/games\/free"},"@type":"ListItem"}],"@type":"BreadcrumbList"}</script>
+  <script
+    type="application/ld+json">{"description":"Smash, dash, and crash your way to glory for your goblin tribe in the traditional game of Bugby.","@context":"http:\/\/schema.org\/","name":"Bugby","@type":"Product"}</script>
+  <title>Bugby by WVProductions</title>
+  <meta name="csrf_token" value="WyJuZkVuIiwxNjc4MjIyOTcxLCJQbmVvTjhlOFVRVzd2THUiXQ==.3HCK01s6LFEdRX20EQvtwf6w4U0=">
+  <link rel="stylesheet" href="./Bugby_files/game.css">
+  <script type="text/javascript">window.itchio_translations_url = 'https://static.itch.io/translations';</script>
+  <script src="./Bugby_files/lib.js.download" type="text/javascript"></script>
+  <script src="./Bugby_files/bundle.min.js.download" type="text/javascript"></script>
+  <script src="./Bugby_files/jquery.maskMoney.js.download" type="text/javascript"></script>
+  <script data-src="https://static.itch.io/react.min.js?1677968310" id="lib_react_src"></script>
+  <script src="./Bugby_files/game.min.js.download" type="text/javascript"></script>
+  <script type="text/javascript">I.current_user = null; I.subdomain = true;</script>
+  <script type="text/javascript">if (!window.location.hostname.match(/localhost/)) {
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
+      ga("create", { "trackingId": "UA-136625-6", "cookieDomain": "auto" })
+      ga("set", 'anonymizeIp', true);
+      ga("send", "pageview");
+      ga("require", "ecommerce");
+    }</script>
+  <style type="text/css" id="game_theme">
+    :root {
+      --itchio_ui_bg: #473736;
+      --itchio_ui_bg_dark: #413130
+    }
 
+    .wrapper {
+      --itchio_font_family: Sniglet;
+      --itchio_bg_color: #9B4B45;
+      --itchio_bg2_color: rgba(158, 94, 89, 1);
+      --itchio_bg2_sub: #ac6c67;
+      --itchio_text_color: #ffffff;
+      --itchio_link_color: #2ce8f4;
+      --itchio_border_color: #b68f8c;
+      --itchio_button_color: #789a9d;
+      --itchio_button_fg_color: #ffffff;
+      --itchio_button_shadow_color: #628487;
+      background-color: #9B4B45;
+      /*! */
+      background-image: url(https://img.itch.zone/aW1nLzEwODIyNDEwLmpwZw==/original/W%2Bl2V1.jpg);
+      ;
+      background-repeat: repeat;
+      background-position: 50% 0;
+      /* */
+    }
+
+    .inner_column {
+      color: #ffffff;
+      font-family: Sniglet, Lato, LatoExtended, sans-serif;
+      background-color: rgba(158, 94, 89, 1)
+    }
+
+    .inner_column ::selection {
+      color: #ffffff;
+      background: #789a9d
+    }
+
+    .inner_column ::-moz-selection {
+      color: #ffffff;
+      background: #789a9d
+    }
+
+    .inner_column h1,
+    .inner_column h2,
+    .inner_column h3,
+    .inner_column h4,
+    .inner_column h5,
+    .inner_column h6 {
+      font-family: 'Amatic SC';
+      font-weight: bold;
+      color: inherit
+    }
+
+    .inner_column a,
+    .inner_column .footer a {
+      color: #2ce8f4
+    }
+
+    .inner_column .button,
+    .inner_column .button:hover,
+    .inner_column .button:active {
+      background-color: #789a9d;
+      color: #ffffff;
+      text-shadow: 0 1px 0px #628487
+    }
+
+    .inner_column hr {
+      background-color: #b68f8c
+    }
+
+    .inner_column table {
+      border-color: #b68f8c
+    }
+
+    .inner_column .redactor-box .redactor-toolbar li a {
+      color: #2ce8f4
+    }
+
+    .inner_column .redactor-box .redactor-toolbar li a:hover,
+    .inner_column .redactor-box .redactor-toolbar li a:active,
+    .inner_column .redactor-box .redactor-toolbar li a.redactor-act {
+      background-color: #789a9d !important;
+      color: #ffffff !important;
+      text-shadow: 0 1px 0px #628487 !important
+    }
+
+    .inner_column .redactor-box .redactor-toolbar .re-button-tooltip {
+      text-shadow: none
+    }
+
+    .game_frame {
+      background: #ac6c67;
+      /*! */
+      /* */
+    }
+
+    .game_frame .embed_info {
+      background-color: rgba(158, 94, 89, 0.85)
+    }
+
+    .game_loading .loader_bar .loader_bar_slider {
+      background-color: #789a9d
+    }
+
+    .view_game_page .reward_row,
+    .view_game_page .bundle_row {
+      border-color: #ac6c67 !important
+    }
+
+    .view_game_page .game_info_panel_widget {
+      background: rgba(172, 108, 103, 1)
+    }
+
+    .view_game_page .star_value .star_fill {
+      color: #789a9d
+    }
+
+    .view_game_page .rewards .quantity_input {
+      background: rgba(172, 108, 103, 1);
+      border-color: rgba(255, 255, 255, 0.5);
+      color: #ffffff
+    }
+
+    .view_game_page .right_col {
+      display: block
+    }
+
+    .game_devlog_page li .meta_row .post_likes {
+      border-color: #ac6c67
+    }
+
+    .game_devlog_post_page .post_like_button {
+      box-shadow: inset 0 0 0 1px #b68f8c
+    }
+
+    .game_comments_widget .community_post .post_footer a,
+    .game_comments_widget .community_post .post_footer .vote_btn,
+    .game_comments_widget .community_post .post_header .post_date a,
+    .game_comments_widget .community_post .post_header .edit_message {
+      color: rgba(255, 255, 255, 0.5)
+    }
+
+    .game_comments_widget .community_post .reveal_full_post_btn {
+      background: linear-gradient(to bottom, transparent, #9e5e59 50%, #9e5e59);
+      color: #2ce8f4
+    }
+
+    .game_comments_widget .community_post .post_votes {
+      border-color: rgba(255, 255, 255, 0.2)
+    }
+
+    .game_comments_widget .community_post .post_votes .vote_btn:hover {
+      background: rgba(255, 255, 255, 0.05)
+    }
+
+    .game_comments_widget .community_post .post_footer .vote_btn {
+      border-color: rgba(255, 255, 255, 0.5)
+    }
+
+    .game_comments_widget .community_post .post_footer .vote_btn span {
+      color: inherit
+    }
+
+    .game_comments_widget .community_post .post_footer .vote_btn:hover,
+    .game_comments_widget .community_post .post_footer .vote_btn.voted {
+      background-color: #789a9d;
+      color: #ffffff;
+      text-shadow: 0 1px 0px #628487;
+      border-color: #789a9d
+    }
+
+    .game_comments_widget .form .redactor-box,
+    .game_comments_widget .form .click_input,
+    .game_comments_widget .form .forms_markdown_input_widget {
+      border-color: rgba(255, 255, 255, 0.5);
+      background: transparent
+    }
+
+    .game_comments_widget .form .redactor-layer,
+    .game_comments_widget .form .redactor-toolbar,
+    .game_comments_widget .form .click_input,
+    .game_comments_widget .form .forms_markdown_input_widget {
+      background: rgba(172, 108, 103, 1)
+    }
+
+    .game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar button {
+      color: inherit;
+      opacity: 0.6
+    }
+
+    .game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar button:hover,
+    .game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar button:active {
+      opacity: 1;
+      background-color: #789a9d !important;
+      color: #ffffff !important;
+      text-shadow: 0 1px 0px #628487 !important
+    }
+
+    .game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar,
+    .game_comments_widget .form .forms_markdown_input_widget li {
+      border-color: rgba(255, 255, 255, 0.5)
+    }
+
+    .game_comments_widget .form textarea {
+      border-color: rgba(255, 255, 255, 0.5);
+      background: rgba(172, 108, 103, 1);
+      color: inherit
+    }
+
+    .game_comments_widget .form .redactor-toolbar {
+      border-color: rgba(255, 255, 255, 0.5)
+    }
+
+    .game_comments_widget .hint {
+      color: rgba(255, 255, 255, 0.5)
+    }
+
+    .game_community_preview_widget .community_topic_row .topic_tag {
+      background-color: #ac6c67
+    }
+
+    .footer .svgicon,
+    .view_game_page .more_information_toggle .svgicon {
+      fill: #ffffff !important
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="./Bugby_files/css">
+  <link rel="stylesheet" type="text/css" href="./Bugby_files/css(1)">
+</head>
+
+<body data-page_name="view_game" class="locale_en game_layout no_theme_toggle responsive" data-host="itch.io">
+  <script type="text/javascript">new I.GameUserTools('#user_tools')</script>
+  <div id="wrapper" class="main wrapper">
+    <div class="inner_column size_very_large family_sniglet" id="inner_column" style="min-height: 912px;">
+      <div class="header has_image align_center" id="header"><img src="./Bugby_files/zJ6mMJ.png" alt="Bugby">
+        <h1 itemprop="name" class="game_title">Bugby</h1>
+      </div>
+      <div class="view_game_page page_widget base_widget direct_download" id="view_game_5657554">
+        <div class="header_buy_row">
+          <p>A downloadable game for Windows</p>
+          <div class="direct_download_row"><button type="button" class="button direct_download_btn"><svg fill="none"
+                version="1.1" role="img" stroke-linejoin="round" viewBox="0 0 24 24" class="svgicon icon_download"
+                stroke-width="2" aria-hidden="" stroke-linecap="round" width="22" height="22" stroke="currentColor">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg> Download</button></div>
+        </div>
+        <div class="columns">
+          <div class="left_col column">
+            <div class="formatted_description user_formatted">
+              <p>Bugby is a Rugby-inspired 3v3 team sport played by Goblins, set in a magical forest, full of hijinks,
+                mayhem and fun.&nbsp;</p>
+              <p><img src="./Bugby_files/Jd2x0p.png" loading="lazy"><br></p>
+              <p>Each team tries to score the most points by carrying the Bugby ball into one of the many goals
+                scattered about.&nbsp;</p>
+              <p><img src="./Bugby_files/PFYO8f.jpg" loading="lazy"><br></p>
+              <p>Use the bouncy mushrooms, pits and platforms to traverse and play across the playground-like
+                arena.&nbsp;But that isn’t just a ball, it’s a pill bug! And unlike the Goblins, it does not want to
+                play this game.</p>
+              <p>
+              </p>
+              <p><img src="./Bugby_files/YCUJis.png" loading="lazy"><br></p>
+              <p><em>Created by Whimsical Violence Productions (UW-Stout Senior capstone team)</em></p>
+              <p><strong>TEAM LEADS</strong></p>
+              <ul>
+                <li>Brady Boducki - Technical Game Design Lead</li>
+                <li>Erin Hongerholt - Product Owner &amp; Game Designer</li>
+                <li>Ari Hytti - Lead Artist</li>
+                <li>Elliot Klenk - Producer</li>
+                <li>Ian Springborn - Lead Programmer</li>
+              </ul>
+              <p><strong>ARTISTS</strong></p>
+              <ul>
+                <li>Ellen Aas</li>
+                <li>Michelle Bryant</li>
+                <li>Erin Hongerholt</li>
+                <li>Ari Hytti</li>
+                <li>Omar Perez Chairez</li>
+                <li>Logan Webster</li>
+              </ul>
+              <p><strong>PROGRAMMERS</strong></p>
+              <ul>
+                <li>Brady Bodgucki</li>
+                <li>Rebecca Denna</li>
+                <li>Bradley Haaning</li>
+                <li>Elliot Klenk</li>
+                <li>Joshua Krenek</li>
+                <li>Jaydon Pfab</li>
+                <li>Ian Springborn</li>
+                <li>Ryan <span><span>Ungerleider</span></span></li>
+              </ul>
+              <p><strong>EXECUTIVE PRODUCERS</strong></p>
+              <ul>
+                <li>Kimberly Loken</li>
+                <li>Michael Tetzlaff</li>
+                <li>Andrew Williams</li>
+              </ul>
+            </div>
+            <div class="more_information_toggle">
+              <div class="toggle_row"><a href="javascript:void(0)" class="toggle_info_btn">More information<svg
+                    viewBox="0 0 37 20" class="svgicon icon_down_tick" aria-hidden="" height="6" version="1.1"
+                    role="img" width="12">
+                    <path
+                      d="m2.0858 0c-1.1535 0-2.0858 0.86469-2.0858 1.9331 0 0.5139 0.21354 1.0183 0.38704 1.1881l18.113 16.879 18.112-16.879c0.174-0.1696 0.388-0.674 0.388-1.1879 0-1.0684-0.932-1.9331-2.086-1.9331-0.577 0-1.111 0.23008-1.49 0.57992l-14.924 13.894-14.925-13.893c-0.3777-0.34998-0.9134-0.581-1.4902-0.581z">
+                    </path>
+                  </svg></a></div>
+              <div class="info_panel_wrapper">
+                <div class="game_info_panel_widget base_widget" id="game_info_panel_7083515">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>Status</td>
+                        <td><a href="https://itch.io/games/in-development">In development</a></td>
+                      </tr>
+                      <tr>
+                        <td>Platforms</td>
+                        <td><a href="https://itch.io/games/platform-windows">Windows</a></td>
+                      </tr>
+                      <tr>
+                        <td>Author</td>
+                        <td><a href="https://wvproductions.itch.io/">WVProductions</a></td>
+                      </tr>
+                      <tr>
+                        <td>Genre</td>
+                        <td><a href="https://itch.io/games/genre-platformer">Platformer</a>, <a
+                            href="https://itch.io/games/genre-sports">Sports</a></td>
+                      </tr>
+                      <tr>
+                        <td>Tags</td>
+                        <td><a href="https://itch.io/games/tag-co-op">Co-op</a>, <a
+                            href="https://itch.io/games/tag-party-game">party-game</a>, <a
+                            href="https://itch.io/games/tag-pvp">PvP</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <div class="uploads">
+              <h2 id="download">Download</h2>
+              <div class="upload_list_widget base_widget" id="upload_list_8643606">
+                <div class="upload"><a data-upload_id="7032289" class="button download_btn"
+                    href="javascript:void(0);">Download</a>
+                  <div class="info_column">
+                    <div class="upload_name"><strong title="BugbySGXFALL_FINAL.zip"
+                        class="name">BugbySGXFALL_FINAL.zip</strong> <span class="file_size"><span>496 MB</span></span>
+                      <span class="download_platforms"><span class="icon icon-windows8" title="Download for Windows"
+                          aria-hidden="true"></span> </span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="download_instructions ">
+              <h2 id="instructions">Install instructions</h2>
+              <div class="formatted_description user_formatted">
+                <p>Install instructions</p>
+                <ol>
+                  <li>Create a folder to extract content to</li>
+                  <li>Download zip folder&nbsp;</li>
+                  <li>Extract content to folder</li>
+                  <li>Execute Bugby.exe file</li>
+                </ol>
+              </div>
+            </div>
+            <div class="game_comments_widget base_widget" id="game_comments_4286348">
+              <h2 id="comments">Leave a comment</h2>
+              <p class="form_placeholder"><a data-register_action="comment"
+                  href="https://itch.io/login?return_to=https%3A%2F%2Fwvproductions.itch.io%2Fbugby">Log in with
+                  itch.io</a> to leave a comment.</p>
+              <div class="community_topic_posts_widget base_widget" id="community_topic_posts_2628269">
+                <div class="community_post_list_widget base_widget" id="community_post_list_7550298">
+                  <script type="text/template"
+                    id="vote_counts_tpl"><% if (up_score > 0) { %><span class="upvotes">(+{{up_score}})</span><% } %><% if (down_score > 0) { %><span class="downvotes">(-{{down_score}})</span><% } %></script>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right_col column">
+            <div class="video_embed"></div>
+            <div class="screenshot_list"><a data-image_lightbox="true" target="_blank"
+                href="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDgyMjQwMC5wbmc=/original/mb4H63.png"><img
+                  src="./Bugby_files/x0Z0ZQ.png" class="screenshot" data-screenshot_id="10822400"
+                  srcset="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDgyMjQwMC5wbmc=/347x500/x0Z0ZQ.png 1x, https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDgyMjQwMC5wbmc=/794x1000/JZdUz%2F.png 2x"></a><a
+                data-image_lightbox="true" target="_blank"
+                href="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDgyMjM5OS5wbmc=/original/J2A0vc.png"><img
+                  src="./Bugby_files/TCZrv+.png" class="screenshot" data-screenshot_id="10822399"
+                  srcset="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDgyMjM5OS5wbmc=/347x500/TCZrv%2B.png 1x, https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDgyMjM5OS5wbmc=/794x1000/Q4UDNX.png 2x"></a><a
+                data-image_lightbox="true" target="_blank"
+                href="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDgyMjM5OC5wbmc=/original/Y4UtYO.png"><img
+                  src="./Bugby_files/1ZxK5B.png" class="screenshot" data-screenshot_id="10822398"
+                  srcset="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDgyMjM5OC5wbmc=/347x500/1ZxK5B.png 1x, https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDgyMjM5OC5wbmc=/794x1000/gHb%2BIR.png 2x"></a><a
+                data-image_lightbox="true" target="_blank"
+                href="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc1MDQyOC5wbmc=/original/wwCFso.png"><img
+                  src="./Bugby_files/WH9nrb.png" class="screenshot" data-screenshot_id="10750428"
+                  srcset="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc1MDQyOC5wbmc=/347x500/WH9nrb.png 1x, https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc1MDQyOC5wbmc=/794x1000/qnoZzP.png 2x"></a><a
+                data-image_lightbox="true" target="_blank"
+                href="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNTI0Ny5wbmc=/original/zoDdob.png"><img
+                  src="./Bugby_files/6BTEQi.png" class="screenshot" data-screenshot_id="10735247"
+                  srcset="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNTI0Ny5wbmc=/347x500/6BTEQi.png 1x, https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNTI0Ny5wbmc=/794x1000/JzUIaI.png 2x"></a><a
+                data-image_lightbox="true" target="_blank"
+                href="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNzM0Ny5wbmc=/original/pqK2yy.png"><img
+                  src="./Bugby_files/cdnsnU.png" class="screenshot" data-screenshot_id="10737347"
+                  srcset="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNzM0Ny5wbmc=/347x500/cdnsnU.png 1x, https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNzM0Ny5wbmc=/794x1000/IyBAQM.png 2x"></a><a
+                data-image_lightbox="true" target="_blank"
+                href="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM4My5wbmc=/original/HWNiHr.png"><img
+                  src="./Bugby_files/dbgl5r.png" class="screenshot" data-screenshot_id="10769383"
+                  srcset="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM4My5wbmc=/347x500/dbgl5r.png 1x, https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM4My5wbmc=/794x1000/BHuJYY.png 2x"></a><a
+                data-image_lightbox="true" target="_blank"
+                href="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNzM0Ni5wbmc=/original/kug%2Bjw.png"><img
+                  src="./Bugby_files/pLARIQ.png" class="screenshot" data-screenshot_id="10737346"
+                  srcset="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNzM0Ni5wbmc=/347x500/pLARIQ.png 1x, https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNzM0Ni5wbmc=/794x1000/KdiwF0.png 2x"></a><a
+                data-image_lightbox="true" target="_blank"
+                href="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNTI1MS5wbmc=/original/MtyS3y.png"><img
+                  src="./Bugby_files/2Nqx4f.png" class="screenshot" data-screenshot_id="10735251"
+                  srcset="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNTI1MS5wbmc=/347x500/2Nqx4f.png 1x, https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNTI1MS5wbmc=/794x1000/64NbQF.png 2x"></a><a
+                data-image_lightbox="true" target="_blank"
+                href="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNTI0NC5wbmc=/original/WJx8cj.png"><img
+                  src="./Bugby_files/eo8H8m.png" class="screenshot" data-screenshot_id="10735244"
+                  srcset="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNTI0NC5wbmc=/347x500/eo8H8m.png 1x, https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNTI0NC5wbmc=/794x1000/oMwNH5.png 2x"></a><a
+                data-image_lightbox="true" target="_blank"
+                href="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNTI0OS5wbmc=/original/x8ZIDa.png"><img
+                  src="./Bugby_files/n43yeK.png" class="screenshot" data-screenshot_id="10735249"
+                  srcset="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNTI0OS5wbmc=/347x500/n43yeK.png 1x, https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNTI0OS5wbmc=/794x1000/lyUZVw.png 2x"></a><a
+                data-image_lightbox="true" target="_blank"
+                href="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNTI0NS5wbmc=/original/%2BPnV4%2B.png"><img
+                  src="./Bugby_files/+ZVEaZ.png" class="screenshot" data-screenshot_id="10735245"
+                  srcset="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNTI0NS5wbmc=/347x500/%2BZVEaZ.png 1x, https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNTI0NS5wbmc=/794x1000/uxJxT3.png 2x"></a><a
+                data-image_lightbox="true" target="_blank"
+                href="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNTI0Ni5wbmc=/original/1I3x%2Fn.png"><img
+                  src="./Bugby_files/IUjuvJ.png" class="screenshot" data-screenshot_id="10735246"
+                  srcset="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNTI0Ni5wbmc=/347x500/IUjuvJ.png 1x, https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNTI0Ni5wbmc=/794x1000/PhjvDN.png 2x"></a><a
+                data-image_lightbox="true" target="_blank"
+                href="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM3Ni5wbmc=/original/sPraN5.png"><img
+                  src="./Bugby_files/KXd7_k.png" class="screenshot" data-screenshot_id="10769376"
+                  srcset="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM3Ni5wbmc=/347x500/KXd7%2Fk.png 1x, https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM3Ni5wbmc=/794x1000/nu8T2%2F.png 2x"></a><a
+                data-image_lightbox="true" target="_blank"
+                href="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM3Ny5wbmc=/original/bZNr5U.png"><img
+                  src="./Bugby_files/tlhbLS.png" class="screenshot" data-screenshot_id="10769377"
+                  srcset="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM3Ny5wbmc=/347x500/tlhbLS.png 1x, https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM3Ny5wbmc=/794x1000/OrgH6b.png 2x"></a><a
+                data-image_lightbox="true" target="_blank"
+                href="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM4Mi5wbmc=/original/s4%2FGyl.png"><img
+                  src="./Bugby_files/+CrB3M.png" class="screenshot" data-screenshot_id="10769382"
+                  srcset="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM4Mi5wbmc=/347x500/%2BCrB3M.png 1x, https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM4Mi5wbmc=/794x1000/TahbJz.png 2x"></a><a
+                data-image_lightbox="true" target="_blank"
+                href="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM4NC5wbmc=/original/ef%2BESt.png"><img
+                  src="./Bugby_files/12K1Ft.png" class="screenshot" data-screenshot_id="10769384"
+                  srcset="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM4NC5wbmc=/347x500/12K1Ft.png 1x, https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM4NC5wbmc=/794x1000/JG3Wcj.png 2x"></a><a
+                data-image_lightbox="true" target="_blank"
+                href="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM4MS5qcGc=/original/hhffNL.jpg"><img
+                  src="./Bugby_files/UVGh1Z.jpg" class="screenshot" data-screenshot_id="10769381"
+                  srcset="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM4MS5qcGc=/347x500/UVGh1Z.jpg 1x, https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM4MS5qcGc=/794x1000/VTl69Q.jpg 2x"></a><a
+                data-image_lightbox="true" target="_blank"
+                href="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM3OS5qcGc=/original/vLoyEN.jpg"><img
+                  src="./Bugby_files/BOtycj.jpg" class="screenshot" data-screenshot_id="10769379"
+                  srcset="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM3OS5qcGc=/347x500/BOtycj.jpg 1x, https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM3OS5qcGc=/794x1000/szyQWG.jpg 2x"></a><a
+                data-image_lightbox="true" target="_blank"
+                href="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM3OC5wbmc=/original/Uw4IQg.png"><img
+                  src="./Bugby_files/w4eqTL.png" class="screenshot" data-screenshot_id="10769378"
+                  srcset="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM3OC5wbmc=/347x500/w4eqTL.png 1x, https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM3OC5wbmc=/794x1000/M93oma.png 2x"></a><a
+                data-image_lightbox="true" target="_blank"
+                href="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM4MC5wbmc=/original/MCf6oV.png"><img
+                  src="./Bugby_files/V3i9i7.png" class="screenshot" data-screenshot_id="10769380"
+                  srcset="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM4MC5wbmc=/347x500/V3i9i7.png 1x, https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc2OTM4MC5wbmc=/794x1000/YtW6Gp.png 2x"></a><a
+                data-image_lightbox="true" target="_blank"
+                href="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNTI0OC5wbmc=/original/MtIwzm.png"><img
+                  src="./Bugby_files/frt3zc.png" class="screenshot" data-screenshot_id="10735248"
+                  srcset="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNTI0OC5wbmc=/347x500/frt3zc.png 1x, https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNTI0OC5wbmc=/794x1000/hGB4iq.png 2x"></a><a
+                data-image_lightbox="true" target="_blank"
+                href="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNTI1Mi5qcGc=/original/CaCDZv.jpg"><img
+                  src="./Bugby_files/jCJkTg.jpg" class="screenshot" data-screenshot_id="10735252"
+                  srcset="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNTI1Mi5qcGc=/347x500/jCJkTg.jpg 1x, https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDczNTI1Mi5qcGc=/794x1000/BMITrK.jpg 2x"></a><a
+                data-image_lightbox="true" target="_blank"
+                href="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc1MDM2Ny5qcGc=/original/62faQy.jpg"><img
+                  src="./Bugby_files/0zfgsO.jpg" class="screenshot" data-screenshot_id="10750367"
+                  srcset="https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc1MDM2Ny5qcGc=/347x500/0zfgsO.jpg 1x, https://img.itch.zone/aW1hZ2UvMTgyODkwMi8xMDc1MDM2Ny5qcGc=/794x1000/d5RcEd.jpg 2x"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">I.setup_layout()</script>
+  <script type="text/template"
+    id="loading_lightbox_tpl"><div aria-live="polite" class="lightbox loading_lightbox"><div class="loader_outer"><div class="loader_label">Loading</div><div class="loader_bar"><div class="loader_bar_slider"></div></div></div></div></script>
+  <script type="text/javascript">new I.CommunityViewTopic('#community_topic_posts_2628269', { "report_url": "https:\/\/itch.io\/post\/:post_id\/report" }); new I.ViewGame('#view_game_5657554', { "hit_url": "https:\/\/wvproductions.itch.io\/bugby\/rh\/eyJyIjoiaHR0cHM6XC9cL2l0Y2guaW9cL3NlYXJjaD9xPWJ1Z2J5IiwiaWQiOjE4Mjg5MDIsImUiOjE2NzgyMjI5OTZ9%2e6rAHgStEa2biydnfmGe2DY8%2fn5U%3d", "type_name": "default", "id": 1828902, "slug": "bugby", "type": 1, "actual_price": 0, "min_price": 0 }, { "generate_download_url": "https:\/\/wvproductions.itch.io\/bugby\/download_url" });
+    I.setup_page();</script>
 </body>
+
 </html>
